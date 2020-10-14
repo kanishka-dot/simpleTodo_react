@@ -7,8 +7,7 @@ export default function TodoList({ todos, removeTodo, toggleComplete }) {
     <ul>
       {todos.map(todo => (
         <Todo
-          key={todo.id}
-          todo={todo}
+          key={todo.id}  todo={todo} toggleComplete={toggleComplete} removeTodo={removeTodo}
         />
       ))}
     </ul>

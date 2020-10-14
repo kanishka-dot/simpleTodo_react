@@ -14,12 +14,11 @@ function TodoForm({addTodo}){
 
         function handleSubmit(e){
             e.preventDefault();
-            // if(todo.task.trim()){
+             if(todo.task.trim()){
                 addTodo({...todo,id:uuid()});
                 setTodo({...todo,task:""})
-            // }
+             }
         }
-
 
     return(
         <form onSubmit={handleSubmit}>
